@@ -24,7 +24,7 @@
       print "</pre>"
 
      ?>
-<!-- 도메인, url 경로 -->
+<!-- 도메인, url 경로 => 해당 경로에 파일이 존재한다-->
      <img src="file/<?=$_FILES['userfile']['name']?>">
   </body>
 </html>
