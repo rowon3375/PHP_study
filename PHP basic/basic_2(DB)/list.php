@@ -59,6 +59,7 @@ if(!empty($_GET['id'])) {
                     <li><a href="input.php">추가</a></li>
                 </ul>
             </nav>
+          <!-- 본문 -->
             <article>
                 <?php
                 if(!empty($topic)){
@@ -67,8 +68,11 @@ if(!empty($_GET['id'])) {
                 <div class="description">
                     <?=htmlspecialchars($topic['description'])?>
                 </div>
+
                 <div>
+          <!-- 수정버튼 -->
                     <a href="modify.php?id=<?=$topic['id']?>">수정</a>
+          <!-- 삭제 -->
                     <form method="POST" action="process.php?mode=delete">
                         <input type="hidden" name="id" value="<?=$topic['id']?>" />
                         <input type="submit" value="삭제" />

@@ -33,7 +33,7 @@
             )";
 
             mysqli_query($conn, $sql);
-    # http 헤더에 대한 부분을 작성
+    # http 헤더에 대한 부분을 작성 =>  redirect
             header("Location: list.php");
             break;
         case 'delete':
@@ -43,7 +43,7 @@
             break;
         case 'modify':
     # SQL 테이블 제어(update문)
-            mysqli_query($conn, 'UPDATE topic SET title = "'.mysqli_real_escape_string($conn, $_POST['title']).'", description = "'.mysqli_real_escape_string($conn, $_POST['description']).'" WHERE id = '.mysqli_real_escape_string($conn,$_POST['id']));
+            mysqli_query($conn, 'UPDATE topic SET title = "'.mysqli_real_escape_string($conn, $_POST['title']).'", description = "'.mysqli_real_escape_string($conn, $_POST['description']).'" WHERE id = '.mysqli_real_escape_string($conn, $_POST['id']));
             header("Location: list.php?id={$_POST['id']}");
             break;
     }
