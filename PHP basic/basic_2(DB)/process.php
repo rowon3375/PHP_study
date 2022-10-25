@@ -7,7 +7,7 @@
 
 # if-if else문과 동일하다
 # GET 방식 => URL안에 값을 포함해서 전달하는 방식
-    if($_GET['mode']){
+  /*  if($_GET['mode']){
       $sql = "insert into topic(title, description, created)
               values (
               '".mysqli_real_escape_string($conn, $_POST['title'])."',
@@ -20,27 +20,32 @@
     } else {
       echo "실패";
     }
+*/
 
-
-/*    switch($_GET['mode']){
+ switch($_GET['mode']){
         case 'insert':
     # SQL 테이블 제어(insert문)
-            $sql = "INSERT INTO topic (title, description, created) VALUES ('".mysqli_real_escape_string($_POST['title'])."', '".mysqli_real_escape_string($_POST['description'])."', now())"
+    $sql = "insert into topic(title, description, created)
+            values (
+            '".mysqli_real_escape_string($conn, $_POST['title'])."',
+            '".mysqli_real_escape_string($conn, $_POST['description'])."',
+            now()
+            )";
 
             mysqli_query($conn, $sql);
     # http 헤더에 대한 부분을 작성
-            //header("Location: 1_2.php");
+            header("Location: list.php");
             break;
         case 'delete':
     # SQL 테이블 제어(delete문)
             mysqli_query($conn, 'DELETE FROM topic WHERE id = '.mysqli_real_escape_string($conn, $_POST['id']));
-            header("Location: 1_2.php");
+            header("Location: list.php");
             break;
         case 'modify':
     # SQL 테이블 제어(update문)
             mysqli_query($conn, 'UPDATE topic SET title = "'.mysqli_real_escape_string($conn, $_POST['title']).'", description = "'.mysqli_real_escape_string($conn, $_POST['description']).'" WHERE id = '.mysqli_real_escape_string($conn,$_POST['id']));
-            header("Location: 1_2.php?id={$_POST['id']}");
+            header("Location: list.php?id={$_POST['id']}");
             break;
-    }*/
+    }
 
 ?>
