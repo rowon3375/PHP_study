@@ -1,4 +1,5 @@
 <?php
+// 데이터 베이스 접속 및 데이터 베이스 사용
 $conn = new mysqli("localhost", "root", 337575, "opentutorials");
 
 // 기존 데이터 가져오기
