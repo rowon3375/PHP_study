@@ -145,7 +145,9 @@ MySQL sever							MySQL client\
 (\'bb\'fd\'bc\'ba db=> opentutorials)
 \f0\b0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
-\cf0 1. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'fd\'bc\'ba(=\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'bb\'fd\'bc\'ba)\
+
+\f1\b \cf0 1. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'fd\'bc\'ba(=\'b5\'f0\'b7\'ba\'c5\'e4\'b8\'ae \'bb\'fd\'bc\'ba)
+\f0\b0 \
 	create database \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'b8\'ed;\
 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
@@ -175,7 +177,9 @@ CREATE
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
 \
-2. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'e7\'bf\'eb\
+
+\f1\b 2. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'e7\'bf\'eb
+\f0\b0 \
 	use \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'b8\'ed;\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
@@ -184,10 +188,17 @@ CREATE
 \f0\fs32 \cf0 \CocoaLigature1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
-3. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'c8\'ae\'c0\'ce\
+\
+
+\f1\b 3. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'c8\'ae\'c0\'ce
+\f0\b0 \
 	show databases;\
 \
-4. \'b5\'a5\'c0\'cc\'c5\'cd \'b1\'b8\'c1\'b6 \'c0\'e2\'b1\'e2(= \'c5\'d7\'c0\'cc\'ba\'ed \'bb\'fd\'bc\'ba)\
+\
+
+\f1\b 4. \'b5\'a5\'c0\'cc\'c5\'cd \'b1\'b8\'c1\'b6 \'c0\'e2\'b1\'e2
+\f0\b0 \
+(1) \'bb\'fd\'bc\'ba	\
 	create table \'c5\'d7\'c0\'cc\'ba\'ed \'b8\'ed(\
 		\'c7\'ca\'b5\'e5\'b8\'ed \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4_\'bc\'fd\'c0\'da, \'b9\'ae\'c0\'da, \'bd\'c3\'b0\'a3, \'b3\'af\'c2\'a5\
 	)\
@@ -215,15 +226,33 @@ CREATE
 
 \f0\fs32 \cf0 \CocoaLigature1 \
 		- \cf6 \CocoaLigature0 AUTO_INCREMENT: \'b5\'a5\'c0\'cc\'c5\'cd\'b0\'a1 \'bb\'f0\'c0\'d4 \'b5\'c7\'b4\'c2 \'bc\'f8\'b0\'a3 \'c0\'da\'b5\'bf\'c0\'b8\'b7\'ce \'c1\'f5\'b0\'a1 \'b5\'c8\'b4\'d9.\
-		- text: \'b1\'e6\'c0\'cc\'c1\'a6\'c7\'d1\'c0\'cc \'be\'f8\'b4\'c2 \'be\'c6\'c1\'d6 \'c5\'ab \'c5\'d8\'bd\'ba\'c6\'ae\'b0\'a1 \'b5\'e9\'be\'ee\'bf\'c2\'b4\'d9.\cf0 \CocoaLigature1 \
+		- text: \'b1\'e6\'c0\'cc\'c1\'a6\'c7\'d1\'c0\'cc \'be\'f8\'b4\'c2 \'be\'c6\'c1\'d6 \'c5\'ab \'c5\'d8\'bd\'ba\'c6\'ae\'b0\'a1 \'b5\'e9\'be\'ee\'bf\'c2\'b4\'d9.\
 \
-5. \'c5\'d7\'c0\'cc\'ba\'ed \'c8\'ae\'c0\'ce\
+\
+(2) \'bc\'f6\'c1\'a4_
+\fs28 \'b8\'c7 \'b8\'b6\'c1\'f6\'b8\'b7\'bf\'a1 \'c3\'df\'b0\'a1\'b5\'ca
+\fs32 \
+	alter table \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed add \'c3\'df\'b0\'a1\'c7\'ca\'b5\'e5\'b8\'ed \'b5\'a5\'c0\'cc\'c5\'cd\'c5\'b8\'c0\'d4 null\'c0\'af\'b9\'ab;\
+	\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f4\fs26\fsmilli13200 alter table member add reg_date datetime not null;
+\f0\fs32 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+
+\f1\b 5. \'c5\'d7\'c0\'cc\'ba\'ed \'c8\'ae\'c0\'ce
+\f0\b0 \
 	show tables; => \'c0\'fc\'c3\'bc \'c5\'d7\'c0\'cc\'ba\'ed \'c8\'ae\'c0\'ce\
 	desc \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed; => 
 \f1\b \'c5\'d7\'c0\'cc\'ba\'ed \'b1\'b8\'c1\'b6 \'c8\'ae\'c0\'ce\
 
 \f0\b0 \
-6. \'c5\'d7\'c0\'cc\'ba\'ed \'b3\'bb\'bf\'eb \'ba\'af\'b0\'e6\
+\
+
+\f1\b 6. \'c5\'d7\'c0\'cc\'ba\'ed \'b3\'bb\'bf\'eb \'ba\'af\'b0\'e6
+\f0\b0 \
  (1) \'c3\'df\'b0\'a1\
 	insert into \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed (\'c5\'d7\'c0\'cc\'ba\'ed\'c0\'c7 \'bf\'ad) values (\'c3\'df\'b0\'a1 \'b3\'bb\'bf\'eb);\
 \
@@ -271,13 +300,22 @@ CREATE
 \f0\fs32 \cf0 \CocoaLigature1 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
-7. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'c1\'a2\'bc\'d3 \'b2\'f7\'b1\'e2\
+\
+
+\f1\b 7. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'c1\'a2\'bc\'d3 \'b2\'f7\'b1\'e2
+\f0\b0 \
 	quit\
 \
-8. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'e8\'c1\'a6\
+\
+
+\f1\b 8. \'b5\'a5\'c0\'cc\'c5\'cd \'ba\'a3\'c0\'cc\'bd\'ba \'bb\'e8\'c1\'a6
+\f0\b0 \
 	drop database \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'b8\'ed;\
 \
-9. \'bb\'e7\'bf\'eb\'c0\'da \'c3\'df\'b0\'a1(\'b5\'ee\'b7\'cf)==> \'be\'ee\'b6\'b0\'c7\'d1 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b1\'c7\'c7\'d1\'c0\'bb \'b0\'a1\'c1\'f6\'b4\'c2 \'b0\'e8\'c1\'a4\'c0\'bb \'c3\'df\'b0\'a1\
+\
+
+\f1\b 9. \'bb\'e7\'bf\'eb\'c0\'da \'c3\'df\'b0\'a1(\'b5\'ee\'b7\'cf)
+\f0\b0 ==> \'be\'ee\'b6\'b0\'c7\'d1 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b1\'c7\'c7\'d1\'c0\'bb \'b0\'a1\'c1\'f6\'b4\'c2 \'b0\'e8\'c1\'a4\'c0\'bb \'c3\'df\'b0\'a1\
 
 \f1\b 	\
 	[\'b1\'c7\'c7\'d1\'c1\'d6\'b1\'e2]_db \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'b1\'c7\'c7\'d1 \'c8\'ae\'c0\'ce \'b0\'a1\'b4\'c9
