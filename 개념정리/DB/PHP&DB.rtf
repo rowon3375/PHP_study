@@ -140,7 +140,7 @@ MySQL sever							MySQL client\
 \uc0\u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \u8212 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\qc\partightenfactor0
 
-\f1\b\fs36 \cf0 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba
+\f1\b\fs36 \cf0 \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba_contrl+c=>\'b0\'ad\'c1\'a6 \'c1\'be\'b7\'e1
 \fs32 \
 (\'bb\'fd\'bc\'ba db=> opentutorials)
 \f0\b0 \
@@ -192,8 +192,15 @@ CREATE
 		\'c7\'ca\'b5\'e5\'b8\'ed \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4_\'bc\'fd\'c0\'da, \'b9\'ae\'c0\'da, \'bd\'c3\'b0\'a3, \'b3\'af\'c2\'a5\
 	)\
 \
-	\'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4_\'bc\'fd\'c0\'da: tinyint(1byte_256\'b0\'b3), smallint(2byte_6\'b8\'b82\'c3\'b5535)\
-				\'b9\'ae\'c0\'da: char(\'bf\'b5\'b9\'ae\'c0\'da, \'b1\'e2\'c8\'a3, \'bc\'fd\'c0\'da), varchar(\'c7\'d1\'b1\'db, \'c0\'cf\'ba\'bb\'be\'ee, \'c1\'df\'b1\'b9\'be\'ee)\
+	
+\f1\b\fs36 \'b5\'a5\'c0\'cc\'c5\'cd \'c5\'b8\'c0\'d4
+\f0\b0\fs32 _\'bc\'fd\'c0\'da: tinyint(1byte_256\'b0\'b3), smallint(2byte_6\'b8\'b82\'c3\'b5535)\
+				\'b9\'ae\'c0\'da: char(\'bf\'b5\'b9\'ae\'c0\'da, \'b1\'e2\'c8\'a3, \'bc\'fd\'c0\'da)_\'c0\'d4\'b7\'c2\'c7\'cf\'b4\'c2 \'b9\'ae\'c0\'da \'bc\'f6\'b0\'a1 \'b0\'ed\'c1\'a4 \'b5\'c8 \'b0\'cd\
+						
+\fs28 ex) \'bf\'ec\'c6\'ed\'b9\'f8\'c8\'a3, \'c6\'f9\'b9\'f8\'c8\'a3, \'c1\'d6\'b9\'ce\'b9\'f8\'c8\'a3
+\fs32 \
+					  varchar(\'c7\'d1\'b1\'db, \'c0\'cf\'ba\'bb\'be\'ee, \'c1\'df\'b1\'b9\'be\'ee)_\'c0\'da\'b8\'ae\'bc\'f6\'b0\'a1 \'c1\'a4\'c7\'d8\'c1\'f6\'c1\'f6 \'be\'ca\'c0\'ba \'b0\'cd\
+		     \'b3\'af\'c2\'a5&\'bd\'c3\'b0\'a3: date(\'b3\'af\'c2\'a5), datetime(8byte_1000-01-01~9999-12-31), 					  timestemp(4byte_1970-01-01~2037-12-31)\
 \
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 
@@ -271,6 +278,10 @@ CREATE
 	drop database \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'b8\'ed;\
 \
 9. \'bb\'e7\'bf\'eb\'c0\'da \'c3\'df\'b0\'a1(\'b5\'ee\'b7\'cf)==> \'be\'ee\'b6\'b0\'c7\'d1 \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9\'c0\'bb \'bb\'e7\'bf\'eb\'c7\'d2 \'bc\'f6 \'c0\'d6\'b4\'c2 \'b1\'c7\'c7\'d1\'c0\'bb \'b0\'a1\'c1\'f6\'b4\'c2 \'b0\'e8\'c1\'a4\'c0\'bb \'c3\'df\'b0\'a1\
+
+\f1\b 	\
+	[\'b1\'c7\'c7\'d1\'c1\'d6\'b1\'e2]_db \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1 \'b1\'c7\'c7\'d1 \'c8\'ae\'c0\'ce \'b0\'a1\'b4\'c9
+\f0\b0 \
 	grant \'b1\'c7\'c7\'d1\'c0\'bb \'c1\'d6\'b0\'ed \'bd\'cd\'c0\'ba \'b8\'ed\'b7\'c9\'be\'ee\'b5\'e9 on \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'b8\'ed.\'b1\'c7\'c7\'d1\'c1\'d6\'b0\'ed\'bd\'cd\'c0\'ba \'c5\'d7\'c0\'cc\'ba\'ed\'b8\'ed(*) to \
 	\'a1\'ae\'be\'c6\'c0\'cc\'b5\'f0\'a1\'af@\'a1\'aelocalhost\'a1\'af identified by \'a1\'ae\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'a1\'af;\
 	\
@@ -284,7 +295,16 @@ CREATE
 	&& \'c3\'df\'b0\'a1\'c7\'d1 \'be\'c6\'c0\'cc\'b5\'f0\'bf\'cd \'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'b7\'ce db \'c1\'a2\'bc\'d3\'b0\'a1\'b4\'c9 \
 		mysql -u\'be\'c6\'c0\'cc\'b5\'f0 -p\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\
 \
+	\
+
+\f1\b 	[\'bb\'fd\'bc\'ba]_mysql \'b5\'a5\'c0\'cc\'c5\'cd\'ba\'a3\'c0\'cc\'bd\'ba\'bf\'a1 user \'c5\'d7\'c0\'cc\'ba\'ed\'bf\'a1\'bc\'ad \'c8\'ae\'c0\'ce \'b0\'a1\'b4\'c9
+\f0\b0 \
+	create user \'a1\'ae\'be\'c6\'c0\'cc\'b5\'f0\'a1\'af@\'a1\'aelocalhost\'a1\'af identified by \'a1\'ae\'ba\'f1\'b9\'d0\'b9\'f8\'c8\'a3\'a1\'af\
 \
+
+\f1\b 	[\'bb\'e8\'c1\'a6]
+\f0\b0 \
+	drop user \'a1\'ae\'be\'c6\'c0\'cc\'b5\'f0\'a1\'af@\'a1\'aelocalhost\'a1\'af;\
 \
 \
 \
