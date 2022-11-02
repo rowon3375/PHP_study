@@ -5,6 +5,7 @@
   require_once("mydb.php");
   $pdo=db_connect();
 ?>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -13,6 +14,8 @@
   <body>
     <?php
       try {
+        # 특정 제한없이 다 들고옴
+        # where 조건문 사용시 => prepare메소드 사용하여 바인딩한다.
         $sql="select * from member";
         $stmh=$pdo->query($sql);
 
@@ -61,7 +64,7 @@
             <?=$row['reg_date']?>
           </td>
           <td>
-            <a href="updateForm.php">수정</a>
+            <a href="updateForm.php?id=<?=$row['id']?>">수정</a>
           </td>
           <td>
             <a href="delete.php?id=<?=$row['id']?>">삭제</a>
