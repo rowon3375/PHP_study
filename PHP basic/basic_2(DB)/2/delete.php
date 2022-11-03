@@ -17,7 +17,7 @@
     $stmh->execute();
     $pdo->commit();
     //print "데이터 삭제 완료";
-    header("Location:localhost:8080/selectPro.php");
+    header("Location:http://localhost:8080/selectPro.php");
 
   } catch (\Exception $e) {
     $pdo->rollBack();

@@ -30,7 +30,7 @@
     $stmh->execute();
     $pdo->commit();
     //print "데이터가 성공적으로 추가되었습니다.";
-    header("Location:localhost:8080/selectPro.php");
+    header("Location:http://localhost:8080/selectPro.php");
 
   } catch (\Exception $e) {
     # 원상태로 돌리고 종료
