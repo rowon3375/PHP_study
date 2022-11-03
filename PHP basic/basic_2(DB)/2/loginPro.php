@@ -56,7 +56,7 @@ else{
     # 세션 변수 할당
     $_SESSION['userid'] = $userid;  //관리자 로그인 성공시
     print $_SESSION['userid'];
-    //header("Location:http://localhost:8080/loginForm.php");
+    header("Location:http://localhost:8080/loginForm.php");
     exit;
 }
 

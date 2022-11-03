@@ -6,6 +6,7 @@
   </head>
   <body>
 <?php
+session_start();
     if(isset($_COOKEI['userid'])){
       $_SESSION['userid']=$_COOKEI['userid'];
     }
