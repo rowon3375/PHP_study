@@ -21,7 +21,7 @@
 
         # 행단위로 들어오는 데이터를 담는다.
         $count=$stmh->rowCount();
-        print "검색 결과는 $count 건입니다.<br>";
+        //print "검색 결과는 $count 건입니다.<br>";
 
       } catch (\Exception $e) {
         print "오류 : ".$Exception->getMessage();
@@ -33,6 +33,7 @@
           print "가입회원이 존재하지 않습니다.";
         } else{
     ?>
+    <a href="insertForm.php">회원가입</a><br>
       <table border="1" width="600">
         <tr align="center">
           <th>아이디</th>
